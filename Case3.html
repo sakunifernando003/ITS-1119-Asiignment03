@@ -6,10 +6,68 @@
     <link rel="stylesheet" href="lib/normalize.css">
     <style>
 
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        height: 200vh;
+    }
+
+
+    .outer-border {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 220px;
+        height: 220px;
+        background-color: gray;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .inner-border {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .content {
+        width: 180px;
+        height: 180px;
+        background-color: purple;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
     </style>
 </head>
 <body>
-
+<div class="outer-border">
+    <div class="inner-border">
+        <div class="content">Hello</div>
+    </div>
+</div>
 
 
 </body>
