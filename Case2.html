@@ -3,8 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Case2</title>
+    <link rel="stylesheet" href="lib/normalize.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 50px; /* Below the header */
+            left: 0;
+            width: 20%;
+            height: calc(100% - 50px); /* Full height minus header */
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .sidebar li i {
+            margin-right: 10px;
+        }
+
+        .content {
+            position: relative;
+            margin-left: 20%;
+            padding: 20px;
+            background-color: #ffffff;
+            height: calc(100% - 100px); /* Full height minus header and footer */
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            position: relative;
+            width: 100%;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.2em;
+            margin-top: auto;
+        }
+
+
+    </style>
 </head>
 <body>
+
+<div class="container">
+    <header class="header">Header Section</header>
+    <nav class="sidebar">
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-info-circle"></i> About</li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h1>Welcome to the Content Area</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac est eu nisi vulputate convallis.</p>
+        <p>Quisque feugiat risus sit amet urna varius, et pretium libero fermentum.</p>
+    </main>
+    <footer class="footer">Footer Section</footer>
+</div>
 
 </body>
 </html>
