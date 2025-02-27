@@ -6,31 +6,35 @@
     <link rel="stylesheet" href="lib/normalize.css">
     <style>
 
-body>div{
+        body{
+            overflow: hidden;
+        }
+
+body>div.main{
     width: 50vw;
     height: 50vh;
     position: absolute;
 }
-body>div:first-child{
+body>div.main:first-child{
     right: 0;
     background-color: green;
 }
-body>div:nth-child(2){
+body>div.main:nth-child(2){
     left: 0;
     background-color: red;
 }
-body>div:nth-child(3){
+body>div.main:nth-child(3){
     right: 0;
     bottom: 0;
     background-color: deeppink;
 }
-body>div:nth-child(4){
+body>div.main:nth-child(4){
     left: 0;
     bottom: 0;
     background-color: gold;
 }
 
-body>div>div{
+body>div.main>div{
     width: 22%;
     aspect-ratio: 1/1;
     position: absolute;
@@ -44,7 +48,92 @@ body>div>div{
 
 }
 
+body>div.main>div>div{
+    width: 40%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    background-color: red;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 
+}
+
+body>div:nth-child(5){
+    width: 15vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+
+}
+
+body>div:nth-child(5)>div{
+    width: 9vw;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+body>.main2{
+    width: 7vw;
+    aspect-ratio: 1/1;
+    background: white;
+    position: absolute;
+
+}
+
+body>.main2:nth-child(6){
+    right: 0;
+    border-bottom-left-radius: 100%;
+
+
+}
+body>.main2:nth-child(7){
+    bottom: 0;
+    border-top-right-radius: 100%;
+
+
+}
+body>.main2:nth-child(8){
+    top: 0;
+    border-bottom-right-radius: 100%;
+
+}
+body>.main2:nth-child(9){
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 100%;
+
+}
+body>.main2:nth-child(10){
+    bottom: -4vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100% 100% 0 0;
+
+ }
+body>.main2:nth-child(11){
+    right: 0;
+    left: 0;
+    top: -4vw;
+    margin: auto;
+    border-radius: 0 0 100% 100%;
+
+}
 
 
 
@@ -52,19 +141,37 @@ body>div>div{
 </head>
 <body>
 
-<div>
-    <div></div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
 </div>
-<div>
-    <div></div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
 </div>
-<div>
-    <div></div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
 </div>
+<div class="main">
+    <div>
+        <div></div>
+    </div>
+</div>
+
 <div>
     <div></div>
 </div>
 
+<div class="main2"></div>
+<div class="main2"></div>
+<div class="main2"></div>
+<div class="main2"></div>
+<div class="main2"></div>
+<div class="main2"></div>
 
 
 
