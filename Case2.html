@@ -22,20 +22,42 @@
         .header {
             position: relative;
             width: 100%;
-            background-color: #007bff;
-            color: white;
+            height: 4vh;
+            background-color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             font-size: 1.5em;
+        }
+
+        .header>div{
+            font-size: 15px;
+            color: black;
+            font-weight:normal;
+            position: fixed;
+            right: 0;
+            margin-right: 30px;
+
+
+
+        }
+        .img{
+            height:50px;
+            width:150px;
+            position: fixed;
+            left: 0;
+            padding-left: 15px;
+
+
+
         }
 
         .sidebar {
             position: absolute;
-            top: 50px; /* Below the header */
+            top: 55px;
             left: 0;
             width: 20%;
-            height: calc(100% - 50px); /* Full height minus header */
-            background-color: #343a40;
+            height: calc(100% - 55px);
+            background-color: #3e1072;
             color: white;
             padding: 20px;
             box-sizing: border-box;
@@ -60,8 +82,8 @@
             position: relative;
             margin-left: 20%;
             padding: 20px;
-            background-color: #ffffff;
-            height: calc(100% - 100px); /* Full height minus header and footer */
+            background-color: white;
+            height: calc(100% - 100px);
             box-sizing: border-box;
             overflow-y: auto;
         }
@@ -79,11 +101,11 @@
         .footer {
             position: relative;
             width: 100%;
-            background-color: #28a745;
+            background-color: rgba(75, 77, 77, 0.96);
             color: white;
             text-align: center;
             padding: 10px 0;
-            font-size: 1.2em;
+            font-size:0.8em;
             margin-top: auto;
         }
 
@@ -93,20 +115,35 @@
 <body>
 
 <div class="container">
-    <header class="header">Header Section</header>
+    <header class="header">
+
+        <div>
+            <a>Home</a>
+            <a>Services</a>
+            <a>Contacts</a>
+            <a>About Us</a>
+        </div>
+        <img src="images/ijse.png"  class="img" alt="ijse" >
+    </header>
+
+
     <nav class="sidebar">
         <ul>
-            <li><i class="fas fa-home"></i> Home</li>
-            <li><i class="fas fa-info-circle"></i> About</li>
-            <li><i class="fas fa-envelope"></i> Contact</li>
+            <li><i class="home"></i> Home </li>
+            <li><i class="service"></i> Services </li>
+            <li><i class="contacts"></i> Contacts </li>
+            <li><i class="about "></i> About us</li>
         </ul>
     </nav>
     <main class="content">
-        <h1>Welcome to the Content Area</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac est eu nisi vulputate convallis.</p>
-        <p>Quisque feugiat risus sit amet urna varius, et pretium libero fermentum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias asperiores aut blanditiis ea eligendi enim eum facilis hic id ipsum nam omnis pariatur quam, totam unde voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias asperiores aut blanditiis ea eligendi enim eum facilis hic id ipsum nam omnis pariatur quam, totam unde voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias asperiores aut blanditiis ea eligendi enim eum facilis hic id ipsum nam omnis pariatur quam, totam unde voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias asperiores aut blanditiis ea eligendi enim eum facilis hic id ipsum nam omnis pariatur quam, totam unde voluptatem voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore eius illum in ipsam laborum libero optio provident voluptatibus? Aliquam consequuntur eligendi itaque labore, magnam maxime porro quis quos velit?Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac est eu nisi vulputate convallis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur dignissimos, magni officia perspiciatis repellat ullam! Consequuntur culpa, cupiditate debitis ipsam natus nesciunt non quasi quo tempora totam? Sit?</p>
     </main>
-    <footer class="footer">Footer Section</footer>
+    <footer class="footer">Developed By IJSE</footer>
 </div>
 
 </body>
