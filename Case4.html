@@ -29,7 +29,42 @@
             font-size: 18px;
             z-index: 1000;
         }
-
+        .header2 {
+            position: sticky;
+            top: 0;
+            background-color: darkblue;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: white;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .header3 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(47, 49, 49, 0.96);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: white;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .header4 {
+            position: sticky;
+            top: 0;
+            background-color: maroon;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: white;
+            font-size: 18px;
+            z-index: 1000;
+        }
         .main {
             position: relative;
             width: 100%;
@@ -41,7 +76,55 @@
 
         .main .content {
             position: absolute;
-            font-size: 48px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .main2 {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 50px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightskyblue;
+        }
+
+        .main2 .content1 {
+            position: absolute;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .main3 {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 50px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(122, 122, 122, 0.86);
+        }
+
+        .main3 .content2 {
+            position: absolute;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .main4 {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 50px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+        }
+
+        .main4 .content3 {
+            position: absolute;
+            font-size: 50px;
             font-weight: bold;
         }
 
@@ -52,6 +135,21 @@
 <div class="header">Card 1</div>
 <div class="main">
     <div class="content">Hello</div>
+</div>
+
+<div class="header2">Card 2</div>
+<div class="main2">
+    <div class="content1">How</div>
+</div>
+
+<div class="header3">Card 3</div>
+<div class="main3">
+    <div class="content2">Are</div>
+</div>
+
+<div class="header4">Card 4</div>
+<div class="main4">
+    <div class="content3">You...?</div>
 </div>
 
 
