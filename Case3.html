@@ -7,12 +7,6 @@
     <style>
 
 
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
 
     body {
         font-family: Arial, sans-serif;
@@ -45,7 +39,33 @@
         justify-content: center;
     }
 
+    .main{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+    }
+    .main1{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .main2{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
     .content {
         width: 180px;
         height: 180px;
@@ -57,18 +77,54 @@
         color: white;
         font-size: 18px;
         font-weight: bold;
+        position: sticky;
     }
 
+    .content1 {
+        width: 180px;
+        height: 180px;
+        background-color: royalblue;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        position: sticky;
+    }
+   .content2{
+        width: 180px;
+        height: 180px;
+        background-color: #fa6e37;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        position: sticky;
+    }
 
     </style>
 </head>
 <body>
 <div class="outer-border">
     <div class="inner-border">
+        <div class="main">
         <div class="content">Hello</div>
+        </div>
     </div>
 </div>
 
+<div class="main1">
+    <div class="content1">Welcome To</div>
+</div>
+
+<div class="main2">
+    <div class="content2">Institute of Software Engineering</div>
+</div>
 
 </body>
 </html>
